@@ -41,7 +41,7 @@ public class IndexController {
 		map.put("list", ar);
 		
 		return map;  // 여기 total은 index.jsp의 $.ajax비동기식 통신으로 호출되어 졌고 반환을 JSON으로 해야하지만
-					 // 현재 Map으로 하고 있다 . 그러므로 Map을 -> JSON으로 변환해야 한다.
+					 // 현재 Map으로 하고 있다 . 그러므로 Map을 -> JSON으로 변환해야 한다. ->@ResponseBody 적어주면
 		
 	}
 	
