@@ -179,6 +179,15 @@
 	</dependency>
 	
 	
+	<!-- 비동기식 통신할 때 Map을 JSON으로 변환하는 라이브러리 -->
+	<dependency>
+	    <groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-mapper-asl</artifactId>
+	    <version>1.9.13</version>
+	</dependency>
+		
+	
+	
 	
 		
 		
