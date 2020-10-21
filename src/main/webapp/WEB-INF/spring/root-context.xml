@@ -31,7 +31,7 @@
 	<!-- Factory 만듦 -->
 	<bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds"/>
-		<!-- 맵퍼연결(member.xml)  맵퍼들을 한곳의 폴더에 몰아 놓고 사용하기. -->
+		<!-- ↱ 맵퍼연결(member.xml)  맵퍼들을 한곳의 폴더에 몰아 놓고 사용하기. -->
 		<property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"/>
 	</bean>
 	

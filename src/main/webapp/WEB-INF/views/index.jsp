@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,10 +39,10 @@
 			<tr>
 				<th>번호</th>
 				<th>아이디</th>
-				<th>비번</th>
+				<th>이름</th>
 			</tr>
 		</thead>
-		
+				
 		<tbody>
 			
 		</tbody>
@@ -64,6 +65,16 @@
 				dataType: "json"				
 			}).done(function(data) {
 				console.log(data);
+				
+				var str = "";
+				
+				for (var i = 0; i < data.list.length; i++) {
+					str +="<tr><td>" +(i+1)+ "</td><td>" +data.list[i].m_id+"</td><td>" +data.list[i].m_name +"</td></tr>";
+				}//for
+				
+				// ↱위에 반복문 돌린거 테이블 tbody에 넣어주
+				$("#t1 tbody").html(str);
+				
 			});
 		});
 	});
